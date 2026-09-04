@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical" android:padding="16dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView android:text="Passport Photo Studio AI"
+            android:textSize="24sp" android:textStyle="bold"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <TextView android:text="3.5 × 4.5 cm • 300 DPI • A4 • Black cutting stroke"
+            android:textSize="14sp" android:layout_marginTop="4dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <Button android:id="@+id/addPhotoButton" android:text="ADD PHOTO"
+            android:layout_marginTop="14dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <LinearLayout android:id="@+id/photoList"
+            android:orientation="vertical"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <TextView android:text="Spacing (mm)"
+            android:textStyle="bold" android:layout_marginTop="12dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <EditText android:id="@+id/spacingInput" android:text="2"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <Button android:id="@+id/generateButton" android:text="GENERATE A4 PDF"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <TextView android:id="@+id/statusText"
+            android:text="AI background removal + face detection enabled. Add photos and set copies."
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>
